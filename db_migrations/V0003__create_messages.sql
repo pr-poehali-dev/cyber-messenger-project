@@ -1,0 +1,1 @@
+CREATE TABLE messages (id VARCHAR(16) PRIMARY KEY, chat_id VARCHAR(16) NOT NULL, from_id VARCHAR(16) NOT NULL, type VARCHAR(10) NOT NULL DEFAULT 'text', text TEXT, audio_url TEXT, audio_duration INTEGER, is_removed BOOLEAN DEFAULT FALSE, created_at TIMESTAMPTZ DEFAULT NOW())
